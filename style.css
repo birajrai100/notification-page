@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "jakartaSansNormal";
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "jakartaSansExtraBold";
+    src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "jakartaSansMedium";
+    src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+
+:root {    
+/* ### Primary */
+--Red: hsl(1, 90%, 64%);
+--Blue: hsl(219, 85%, 26%);
+
+/* ### Neutral */
+--White: hsl(0, 0%, 100%);
+--Verylightgrayishblue: hsl(210, 60%, 98%);
+--Lightgrayishblue1: hsl(211, 68%, 94%);
+--Lightgrayishblue2: hsl(205, 33%, 90%);
+--Grayishblue: hsl(219, 14%, 63%);
+--Darkgrayishblue: hsl(219, 12%, 42%);
+--Verydarkblue: hsl(224, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--Lightgrayishblue2);
+    display: flex;
+    justify-content: center;
+}
+
+#notification-container {
+    font-family: "jakartaSansNormal";
+    max-width: 800px;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 20px;
+}
+#heading-container-block1 {
+    display: flex;
+    align-items: flex-start;
+}
+#heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+#heading-container-block1 h1 {
+    font-family: "jakartaSansNormal";
+    font-size: 25px;
+    color: var(--Verydarkblue);
+}
+#heading-container-block1 p {
+    background: blue;
+    font-size: 17px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+    color: white;
+}
+b {
+    color: var(--Verydarkblue)
+}
+b:hover {
+   color: var(--Blue);
+   cursor: pointer;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.main-container {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+}
+.main-container-image img {
+    width: 40px;
+}
+.main-container-chessimage img {
+    width: 40px;
+}
+.main-container-message {
+    padding-left: 15px;
+}
+#msg {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 10px 0px 10px 0;
+    padding: 10px;
+}
+#msg:hover {
+    background-color: var(--Lightgrayishblue1);
+}
+.unread {
+    background: hsl(210, 60%, 98%);
+    border-radius: 10px;
+}
+.e {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.chess {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+}
+.chessgirl {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 15px;
+}
